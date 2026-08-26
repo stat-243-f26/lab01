@@ -1,0 +1,142 @@
+---
+title: "Technologies, Data, and Stat Learning Methods"
+subtitle: "Stat 243: Lab 1"
+format: html
+editor: source
+toc: false
+---
+
+## Due: Friday, Sep 11th, 11am PT.
+
+## Problem 1: Setup
+
+If you've made it here, you have done Problem 1 correctly!
+
+
+## Problem 2: Quarto
+
+Quarto is a markdown language that allows you to both write text and R code in the same document. This exercise asks you to do both of those things. 
+
+a.  Retype the following sentence below:
+
+> I love doing statistics in R!
+
+
+
+b.  Below is an `R` chunk that creates an object `x`, sets it equal to 2, and then adds 2 to it.
+
+```{r}
+x <- 2
+x + 2
+```
+
+The code chunk below then saves the results of `x+2` into a new object `y`.
+
+```{r}
+y <- x + 2
+y
+```
+
+Create your own code chunk below that:
+
+  - adds 16 to `y`, and then divides that quantity by 4
+  - saves the results of the above equation into a new object `z`, and prints out the value of `z`
+
+
+
+## Problem 3: Exploring data
+
+In this problem, we are going to explore a data frame in `R`.
+
+a.  Run the following code to load the `openintro` library/package and to grab the `yrbss` dataset.
+
+*Pro tip: To run a single line of code, put the cursor on the same line as the code and hit Command+Enter (for a Mac) or Control+Enter (for a PC). To run all the code in a chunk, put the cursor on a line of code and hit Command+Shift+Enter (for a Mac) or Ctrl+Shift+Enter (for a PC).*
+
+```{r}
+#| message: false
+#load the openintro package and the yrbss dataset
+library(openintro)
+data(yrbss)
+```
+
+b.  Run the following to begin exploring the data. (Leave in the `eval: false`.)
+
+*Pro tip: For datasets in packages, we can run `?` followed by the dataset name to open up the documentation file in the Help pane that describes the dataset and provides information on the variables.*
+
+```{r}
+#| eval: false  
+View(yrbss)
+?yrbss
+```
+
+c.  What does a row of the data frame represent? How many rows are in the data frame?
+
+
+
+
+
+
+
+d.  What does a column of the data frame represent? How many columns are in the data frame?
+
+
+
+
+
+
+
+e.  Is `age` recorded as a categorical or a quantitative variable? How about `hours_tv_per_school_day`? Explain your reasoning.
+
+
+
+
+
+
+
+f.  We will learn to be careful with how we treat missing values, which are typically labeled as `NA` in the data frame. What are two possible reasons why the the variable `text_while_driving_30d` might be recorded as `NA`? 
+
+
+
+
+
+
+
+g.  List two quantitative variables found in the dataset that haven't already been mentioned in this problem.
+
+
+
+
+
+
+
+
+h.  List two categorical variables found in the dataset that haven't already been mentioned in this problem.
+
+
+
+
+
+
+
+
+
+
+## Problem 4: Methods of statistical learning
+
+For each problem below, state (i) whether it is a classification or regression problem, (ii) whether we are most interested in inference or prediction, (iii) the sample size, $n$, and (iv) the number of predictors, $p$.
+
+a.  We collect a set of data on the top 500 firms in the U.S. For each firm we record profit, number of employees, industry and CEO salary. We are interested in understanding which factors effect CEO salary.
+
+
+
+
+b.  We are considering launching a new product and wish to know whether it will be a *success* or *failure*. We collect data on 20 similar products that were previously launched. For each product, we have recorded whether it was a success or failure, price charged for the product, marketing budget, competition price, and ten other variables.
+
+
+
+
+c.  We are interested in predicting the % change in the USD/Euro exchange rate in relation to the weekly changes in the world stock markets. We collect weekly data for all of 2024. For each week, we record the % change in the USD/Euro, the % change in the US market, the % change in the British market, and the % change in the German market.
+
+
+
+
