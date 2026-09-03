@@ -43,8 +43,61 @@ Create your own code chunk below that:
   - saves the results of the above equation into a new object `z`, and prints out the value of `z`
 
 
+## Problem 3: Activity reflection
 
-## Problem 3: Exploring data
+On Wednesday, we had an activity where you had to predict the faculty member's age based on a provided photo. In this exercise, you will reflect on the types of error in your group's predictions. 
+
+Below is a photo of the predictions made and true values for faculty age in those photos. 
+
+[insert photo]
+
+
+In class, we discussed different ways to quantify error: the zero-one loss, the mean absolute deviation, and the mean squared error. Below these terms are defined:
+
+$$
+MZOL = \frac{1}{n} \sum_{i = 1}^{n} \begin{cases} 1 &\mbox{if } \hat y_i \neq y_i \\ 0 &\mbox{if } \hat y_i = y_i \end{cases}
+$$
+
+$$
+MAD = \frac{1}{n} \sum_{i = 1}^{n} \vert \hat y_i - y_i \vert
+$$
+
+$$
+MSE = \frac{1}{n} \sum_{i = 1}^{n} (\hat y_i - y_i)^2
+$$
+
+We'll use these terms for the following parts of this question. 
+
+a.  State the number of your group. Using R, compute the MZOL, MAD, and MSE for your group's predictions. 
+
+```{r}
+
+```
+
+
+b.  Now, using R compute the MZOL, MAD, and MSE for a your group number + 1 (if you are group number 5, do this for group number 1). Did your group guess closer on average to the true value to the other group? In terms of all measures of error? 
+
+```{r}
+
+```
+
+
+c.  We often would like to know more than just the *error* of our estimator. Sometimes we would like to ask questions such as: "on average, do we under- or over-estimate faculty age". We can conceive of a measure called "bias" to answer this question: 
+
+$$
+\mbox{Bias}(\hat y) = \frac{1}{n}\sum_{i=1}^n \hat y_i - y_i.
+$$
+In R, compute the bias for your group and the group you are comparing results to. Based on the sign and magnitude of the bias, do you over- or under-estimate age of faculty members based on their photo, on average? By how much? What about the group you are comparing to? 
+
+```{r}
+
+```
+
+
+d.  Based on parts a., b., and c., in your opinion, which group did better at guessing faculty ages? Defend your opinion by making claims about bias and error.  
+
+
+## Problem 4: Exploring data
 
 In this problem, we are going to explore a data frame in `R`.
 
