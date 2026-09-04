@@ -115,7 +115,7 @@ On Wednesday, we had an activity where you had to predict the faculty member's a
 
 Below is a photo of the predictions made and true values for faculty age in those photos. 
 
-[insert photo]
+![](predictions.jpeg)
 
 
 In class, we discussed different ways to quantify error: the zero-one loss, the mean absolute deviation, and the mean squared error. Below these terms are defined:
